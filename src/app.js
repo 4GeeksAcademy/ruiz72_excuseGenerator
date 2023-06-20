@@ -5,6 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+//This function its execute the HTML document first
 window.onload = function() {
   document.querySelector("#press").addEventListener("click", () => {
     document.querySelector("#excuse").innerHTML = generateExcuse();
@@ -12,16 +13,18 @@ window.onload = function() {
   console.log("Hello from the from console");
 };
 
+
+//This function is to generate de excuse
 let generateExcuse = function() {
-  let who = ["The dog", "My grandma", "His turtle", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "the keys", "the car"];
+  let who = ["The dog", "My uncle", "His cat", "My parrot"];
+  let action = ["ate", "peed", "crushed", "stole"];
+  let what = ["my phone", "the window", "the food"];
   let when = [
-    "before the class",
-    "right on time",
-    "when I finished",
-    "during my lunch",
-    "while I was praying"
+    "before the meeting",
+    "yesterday",
+    "when I wasn´t at home",
+    "during I was having breakfast",
+    "while I was studying"
   ];
 
   let whoIndex = Math.floor(Math.random() * who.length);
